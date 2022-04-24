@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Specificity</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div.wrapper .side .content div.center .parapraph span.color {
+        color: red;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Section 1 -->
+      <div class="side">
+        <p id="#id3">this is a paragraph</p>
+        <div class="center">
+          <p class="parapraph">
+            text area
+            <span class=".color">.color</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+
+      <div class="side">
+        <div class="content">
+          <p id="#id2">this is a paragraph</p>
+          <div class="center">
+            <p class="parapraph">
+              text area
+              <span class="#color">color</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+
+        <div class="content">
+          <p id="#id1">this is a paragraph</p>
+          <div class="center">
+            <p class="parapraph">
+              text area
+              <span class="color">#color</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

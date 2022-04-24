@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Table</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        margin: 30px;
+        border: 1px solid rgb(201, 201, 201);
+      }
+      table, th, td {
+        border-bottom: 1px solid rgb(192, 192, 192);
+        border-collapse: collapse;
+        text-align: start;
+      }
+      table tr:first-child {
+        background-color: #019879;
+        color: white;
+      }
+      th,td {
+        padding: 10px 15px;
+      }
+      table tr:nth-child(even) {
+        background-color: rgb(221, 221, 221);
+        color: #019879;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <th>Emri</th>
+        <th>Mbiemri</th>
+        <th>Adresa</th>
+      </tr>
+      <tr>
+        <td>Qendrim</td>
+        <td>Imeri</td>
+        <td>Drenas</td>
+      </tr>
+      <tr>
+        <td>Gjon</td>
+        <td>Berisha</td>
+        <td>Drenas</td>
+      </tr>
+      <tr>
+        <td>Shpetim</td>
+        <td>Beqiri</td>
+        <td>Ferizaj</td>
+      </tr>
+      <tr>
+        <td>Gizm</td>
+        <td>Mustafa</td>
+        <td>Fush Kosove</td>
+      </tr>
+    </table>
+  </body>
+</html>
